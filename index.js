@@ -123,6 +123,11 @@ app.get('/person', (req, res) => {
   res.json(farmlandKYCData);
 });
 
+
+app.get('/accounts/v1/private/kyc', (req, res) => {
+  res.json(farmlandKYCData);
+});
+
 app.get('/people/:id', (req, res) => {
   const personId = +req.params.id;
 
